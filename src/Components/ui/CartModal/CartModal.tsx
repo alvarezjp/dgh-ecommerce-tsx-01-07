@@ -1,9 +1,14 @@
+import type { FC } from "react"
 import Close from "../../../assets/close.svg"
 import styles from "./CartModal.module.css"
 import style from "./Table.module.css"
 
+interface Props {
+    handleShowCartModal: () => void
+}
 
-export const CartModal = ({handleShowCartModal}) => {
+
+export const CartModal:FC<Props> = ({handleShowCartModal}) => {
   return (
     <div className={styles.modalButtonContainer}>
         <button className={styles.modalCloseButton} onClick={handleShowCartModal}>

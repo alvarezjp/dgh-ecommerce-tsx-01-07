@@ -1,19 +1,27 @@
-import { useContext } from "react"
+import { useContext, type FC } from "react"
 import styles from "./CartProduct.module.css"
 import { CartContext } from "../../../Context/CartContext"
+import type { CartProductIterface, Product } from "../../../interface"
 
-export const CartProduct = ({product}) => {
+
+interface Props {
+    product:Product
+}
+
+
+
+export const CartProduct:FC<Props> =({product}) => {
 
 const {dispatch} = useContext(CartContext);
 
-const item = {
-    id: product.tail,
+const item:CartProductIterface = {
+    id: product.id,
     name:product.name,
     image:product.image,
     quantity:1
 }
 
-const addToCart = (item) => {
+const addToCart = (item:CartProductIterface) => {
   dispatch({type:"ADD_TO_CART",payload:item})
 }
 
