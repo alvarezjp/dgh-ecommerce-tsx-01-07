@@ -1,7 +1,7 @@
-import { useContext, type FC } from "react"
-import styles from "./CartProduct.module.css"
-import { CartContext } from "../../../Context/CartContext"
+import { type FC } from "react"
+import useCartContext from "../../../hooks/useCartContext"
 import type { CartProductIterface, Product } from "../../../interface"
+import styles from "./CartProduct.module.css"
 
 
 interface Props {
@@ -12,12 +12,13 @@ interface Props {
 
 export const CartProduct:FC<Props> =({product}) => {
 
-const {dispatch} = useContext(CartContext);
+const {dispatch} = useCartContext();
 
 const item:CartProductIterface = {
     id: product.id,
     name:product.name,
     image:product.image,
+    price:product.price,
     quantity:1
 }
 
