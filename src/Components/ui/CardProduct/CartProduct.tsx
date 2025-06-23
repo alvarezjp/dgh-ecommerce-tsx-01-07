@@ -2,6 +2,7 @@ import { type FC } from "react"
 import useCartContext from "../../../hooks/useCartContext"
 import type { CartProductIterface, Product } from "../../../interface"
 import styles from "./CartProduct.module.css"
+import { toast } from "sonner"
 
 
 interface Props {
@@ -24,6 +25,8 @@ const item:CartProductIterface = {
 
 const addToCart = (item:CartProductIterface) => {
   dispatch({type:"ADD_TO_CART",payload:item})
+  toast.success(`Product added to cart:  ${item.name}`)
+
 }
 
     return (
