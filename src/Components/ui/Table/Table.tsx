@@ -59,7 +59,7 @@ export const Table = () => {
                 </tbody>
             </table>
             <div className={style.modalTotalContainer}>
-                <h3> ${totalPay()} </h3>
+                <h3> Total: ${totalPay()} </h3>
             </div>
         </>
     )
