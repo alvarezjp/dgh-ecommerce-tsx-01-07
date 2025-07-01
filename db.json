@@ -15137,6 +15137,32 @@
       "type": "Figure",
       "id": 840,
       "price": 164
+    },
+    {
+      "amiiboSeries": "prueba",
+      "character": "prueba",
+      "gameSeries": "prueba",
+      "head": "prueba",
+      "image": "https://w7.pngwing.com/pngs/971/475/png-transparent-pokemon-charmander-illustration-pokemon-x-and-y-pokemon-go-charmander-bulbasaur-pokemon-mammal-orange-vertebrate-thumbnail.png",
+      "name": "prueba",
+      "releaseDate": "2025-07-01",
+      "tail": "prueba",
+      "type": "prueba",
+      "price": "1000",
+      "id": 841
+    },
+    {
+      "amiiboSeries": "charmander 2",
+      "character": "prueba",
+      "gameSeries": "prueba",
+      "head": "prueba",
+      "image": "https://w7.pngwing.com/pngs/971/475/png-transparent-pokemon-charmander-illustration-pokemon-x-and-y-pokemon-go-charmander-bulbasaur-pokemon-mammal-orange-vertebrate-thumbnail.png",
+      "name": "prueba",
+      "releaseDate": "2025-07-01",
+      "tail": "prueba",
+      "type": "prueba",
+      "price": "1000",
+      "id": 842
     }
   ]
 }
